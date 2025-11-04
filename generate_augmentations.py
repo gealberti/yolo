@@ -38,9 +38,9 @@ transform = A.Compose([
         mode=cv2.BORDER_CONSTANT,
         cval=0 
     ),
-    A.ElasticTransform(p=0.3, alpha=120, sigma=120 * 0.05, border_mode=cv2.BORDER_CONSTANT, value=0),
-    A.GridDistortion(p=0.3),
-    A.OpticalDistortion(distort_limit=1.5, p=0.3),
+    #A.ElasticTransform(p=0.3, alpha=120, sigma=120 * 0.05, border_mode=cv2.BORDER_CONSTANT, value=0),
+    #A.GridDistortion(p=0.3),
+    #A.OpticalDistortion(distort_limit=1.5, p=0.3),
 
     # 3. Flips
     A.HorizontalFlip(p=0.5),

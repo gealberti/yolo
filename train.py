@@ -83,9 +83,9 @@ def main():
         cache=True,
 
         # --- Parâmetros de Treinamento ---
-        epochs=150,
+        epochs=250,
         patience=55,
-        batch=-1,  # -1 para auto-batch
+        batch=128,  # -1 para auto-batch
         imgsz=640,
         optimizer='auto',
         lr0=0.01,
@@ -96,7 +96,7 @@ def main():
         name='yolov8n_radical_augmentation_run',
 
         # --- DATA AUGMENTATION (SIMPLIFICADO) ---
-        mosaic=0.5,   
+        #mosaic=0,   
         fliplr=0.5  
     )
     print("Treinamento concluído.")
