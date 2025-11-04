@@ -10,7 +10,7 @@ def main():
     print(f"Usando dispositivo: {device}")
 
     # --- 2. Carregar o Modelo Treinado ---
-    model_path = 'yolo_training_mammography/yolov8n_radical_augmentation_run/weights/best.pt'
+    model_path = 'yolo_training_mammography/yolov8n_radical_augmentation_run6/weights/best.pt'
     model = YOLO(model_path)
     print(f"Modelo carregado de: {model_path}")
 
