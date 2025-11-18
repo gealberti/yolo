@@ -73,7 +73,7 @@ def main():
     print(f"Usando dispositivo: {device}")
 
     # --- 2. Seleção do Modelo ---
-    model = YOLO("yolov8n.pt") # Modelo Nano - Mais rápido
+    model = YOLO("yolo11n.pt") # Modelo Nano - Mais rápido
 
     print("Iniciando o treinamento com o dataset aumentado...")
     results = model.train(
@@ -85,7 +85,7 @@ def main():
         # --- Parâmetros de Treinamento ---
         epochs=250,
         patience=55,
-        batch=128,  # -1 para auto-batch
+        batch=100,  # -1 para auto-batch
         imgsz=640,
         optimizer='auto',
         lr0=0.01,
